@@ -51,11 +51,6 @@ func getCardType(pan string) string {
 		return "UNKNOWN"
 	}
 
-	prefix := pan[0:1]
-	if len(pan) >= 2 {
-		prefix = pan[0:2]
-	}
-
 	switch {
 	case strings.HasPrefix(pan, "4"):
 		return "VISA"
