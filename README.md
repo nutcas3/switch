@@ -6,12 +6,12 @@ A high-performance Electronic Funds Transfer (EFT) switch built in Go, implement
 
 - **ISO8583 Message Processing**: Full support for ISO8583 specification for financial transaction messages
 - **Authorization Engine**: Real-time transaction authorization with PIN verification, balance checking, and limit enforcement
-- **Transaction Routing**: Intelligent routing of transactions to appropriate issuers/acquirers
-- **Settlement Processing**: Automated settlement and reconciliation of transactions
-- **Privacy Protection**: Built-in PAN masking and sensitive data protection
-- **Metrics & Monitoring**: Prometheus metrics integration for observability
+- **Transaction Routing**: Intelligent routing of transactions to appropriate issuers/acquirers based on BIN patterns
+- **Settlement Processing**: Automated settlement and reconciliation of transactions with Mastercard IPM format
+- **Privacy Protection**: Built-in PAN masking using HMAC for audit trails
+- **Metrics & Monitoring**: Prometheus metrics integration for TPS, latency, and error tracking
 - **Simulators**: Terminal and issuer simulators for testing and development
-- **CLI Tools**: Command-line utilities for administration and operations
+- **CLI Tools**: Command-line utilities for PAN validation, message generation, and data checking
 
 ## Architecture
 
